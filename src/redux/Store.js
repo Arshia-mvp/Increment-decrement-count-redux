@@ -8,5 +8,9 @@ let rootReducer = combineReducers({
 });
 
 let store = createStore(rootReducer);
+import { createStore } from "redux";
+import CounterReducer from "./CounterReducer";
+
+let store = createStore(CounterReducer);
 
 export default store;
